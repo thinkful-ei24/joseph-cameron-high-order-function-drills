@@ -68,3 +68,10 @@ const turtleSteps = function(array){
 
 let steps = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
 turtleSteps(steps);
+
+const codedMessage = 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest';
+
+const test = codedMessage.split(' ')
+.reduce((acc, curVal) => curVal.length === 3 ? acc += ' ' : acc += curVal[curVal.length -1].toUpperCase(), '');
+
+console.log(test);
