@@ -60,3 +60,11 @@ rocksWarning('Centinela Ave and Olympic Blvd');
 chickenWarning('first Ave and second Blvd');
 chickenWarning('third Ave and fourth Blvd');
 
+const turtleSteps = function(array){
+  return array.filter(num => num[0]>=0 && num[1]>=0)
+  .map(num => num[0]+num[1])
+  .forEach(num => console.log(num));
+}
+
+let steps = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
+turtleSteps(steps);
